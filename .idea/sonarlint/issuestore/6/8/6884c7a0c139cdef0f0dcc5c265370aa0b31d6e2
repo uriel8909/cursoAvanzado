@@ -1,0 +1,12 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‡Þí‹
+S
+java:S1444"1Make this "public static usuarioTemp" field final(¬¹Û„úÿÿÿÿ8ª¡Ú·».
+O
+java:S1444"2Make this "public static passwordTemp" field final(ú»¯¬8ª¡Ú·».
+y
+java:S1104"WMake usuarioTemp a static final constant or non-public and provide accessors if needed.(¬¹Û„úÿÿÿÿ8ª¡Ú·».
+u
+java:S1104"XMake passwordTemp a static final constant or non-public and provide accessors if needed.(ú»¯¬8ª¡Ú·».
+W
+java:S1118":Add a private constructor to hide the implicit public one.(‡Þí‹8ª¡Ú·».
