@@ -9,9 +9,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Objects;
+
+import static com.uriel8909.cursoavanzado.variablesGlobales.codigosqr;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     Toolbar mainToolbar;
     Menu menuActivity;
     Context context;
+    Button btn_qr;
+    TextView tv_codigo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +36,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        btn_qr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(context,QrActivity.class));
+            }
+        });
+        if (!codigosqr.isEmpty()){
+            tv_codigo.setText(codigosqr + "es tu codigo");
+        }
+    }
+
     private void configuracionesIniciales(){
         mainToolbar = findViewById(R.id.toolbarMain);
+        btn_qr = findViewById(R.id.btn_qr);
+        tv_codigo= findViewById(R.id.tv_codigo);
         setSupportActionBar(mainToolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
     }
