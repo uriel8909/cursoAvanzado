@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mainMenu_about:
                 Toast.makeText(this, "About presionado!",Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.mainMenu_AgregaruSUARIO:
+                startActivity(new Intent(context,AgregarUsuarioActivity.class));
+                break;
+
         }
         return super.onOptionsItemSelected(item);
     }

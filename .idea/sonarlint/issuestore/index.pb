@@ -7,8 +7,6 @@ o
 ?app/src/main/java/com/uriel8909/cursoavanzado/LoadActivity.java,4\3\4319f236f4e8dfdef7b6edf2d1586356f17d165c
 i
 9app/src/main/java/com/uriel8909/cursoavanzado/myData.java,a\a\aab0284e89bef4e423adf3c117b63c859f24b52e
-S
-#app/src/main/res/menu/main_menu.xml,d\e\ded5c887bbeaf031e4b264875c385f52e227c161
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 R
